@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>E-Portfolio</title>
+
+	<style type="text/css">
+		::selection {
+			background: white;
+			color: darkolivegreen;
+			
+		}
+		body {
+			background: black;
+			color: white;
+			
+		}
+		/*===Header===*/
+		.nav-bar {
+			
+		}
+		.nav-bar a,.nav-edu a{
+			text-decoration: none;
+			font-family: cursive;
+			font-weight: bolder;
+			color: wheat;
+			
+			padding: 3px;
+			font-size: 26px;
+			margin: 1%;
+		}
+
+		.nav-bar a:hover,.nav-edu a:hover{
+			background: #fffafa;
+			padding: 3px;
+			margin:  1%;
+			color: crimson;
+			background: bisque;
+			border-radius: 5px;
+		}
+
+		.separator {
+			height: 1px;
+			width: 87vw;
+			margin-left: 10%;
+			background: white;
+		}
+
+		/*===h1 tags===*/
+
+		h1{
+			text-align: center;
+			color: gold;
+		}
+		/*===maindiv===*/
+		
+		.profile{grid-area: profile;}
+		.about{grid-area: about;}
+		.academics{grid-area: academics;}
+		.skills{grid-area: skills;}
+		.contact{grid-area: contact;}
+		.nav-edu{grid-area: nav-edu;}
+
+		.maindiv{
+			display: grid;
+			grid-template-areas: 
+			'about about about about about about'
+			
+			'nav-edu academics academics academics academics academics'
+			'skills skills skills skills skills skills'
+			'contact contact contact contact contact contact';
+			grid-gap: 15px;
+
+			margin-top: 5px;
+		}
+
+		.maindiv >div{
+			
+			padding: 10px;
+			border-radius: 10px;
+			/*box-shadow:  3px 3px 1px antiquewhite;*/
+		}
+
+		/*===About====*/
+		.about{
+			text-align: center;
+			font-family: Serif;
+			font-size: 25px;
+			height: 50vw;
+			object-fit: cover;
+			font-kerning: normal;
+			background-size: cover;
+			background-image: url('Images/bg1.jpg');
+		}
+
+		h2 {
+			text-align: center;
+			-webkit-text-stroke: 1px crimson;
+			-webkit-text-fill-color: black;
+		}
+
+		img {
+			width: 41%;
+			align-items: center;
+			margin-left: 3%;
+			border-radius: 5px;
+			
+		}
+		/*===Academics===*/
+		.nav-edu a{
+			display: block;
+			padding: 3px;
+			margin: 1%;
+		}
+
+		/*===Skills===*/
+		.html,.js,.css{
+			display: inline-flex;
+			width: 15rem;
+			margin: 5rem;
+		}
+
+		span {
+			font-size: 23px;
+		}
+
+		/*===Contact===*/
+		::placeholder {
+			font-size: 15px;
+		}
+		input {
+			font-size: 21px;
+			padding: 1%;
+			width: 44vw;
+			border: none;
+			margin: 3px;
+			color: white;
+			background: black;
+			border-bottom: 7px solid red;
+		}
+		textarea {
+			width: 50vw;
+			font-size: 21px;
+			padding: 4%;
+			color: white;
+			margin: 1%;
+			background: black;
+			border-bottom: 4px solid red;
+		}
+
+		button {
+			width: 20vw;
+			padding: 15px;
+			font-size: 19px;
+			background: lawngreen;
+			color: black;
+			font-weight: bolder;
+			border: 5px double mediumseagreen;
+		}
+
+		button:hover {
+			background: powderblue;
+			border: 5px double blue;
+		}
+		/*===Responsive===*/
+		@media screen and (max-width: 620px){
+			body {
+				font-size: 16px;
+			}
+			.nav-bar a{
+				display: block;
+				text-align: center;
+			}
+
+			.maindiv {
+				display: grid;
+				grid-template-areas: 
+				'about about about about about about'
+						
+				'nav-edu nav-edu nav-edu nav-edu nav-edu nav-edu'
+				'academics academics academics academics academics academics'
+				'skills skills skills skills skills skills'
+				'contact contact contact contact contact contact';
+			}
+			img {
+				width: 90vw;
+				
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="nav-bar" id="header" align="right">
+		<a href="#header">Home</a>
+		<a href="#about">About</a>
+		<a href="#academics">Academics</a>
+		<a href="#skills">Skills</a>
+		<a href="#contact">Connect at</a>
+	</div>
+	<br>
+	<div class="separator"></div>
+	<br>
+	<div class="maindiv">
+		<div class="about">
+			<br>
+			<h2>Hey...</h2>
+			<h2>I'm FrondEnd WebDev</h2>
+		</div>
+		
+		<div class="nav-edu">
+			<a href="#ssc">SSC</a>
+			<a href="#hsc">HSC</a>
+			<a href="#engg">Engineering</a>
+		</div>
+		<div class="academics"  id="academics"><h1>Academics</h1>
+			<h1>SSC</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<h1>HSC</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<h1>Engineering</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+		<div class="skills" id="skills"><h1>Skills</h1>
+			<h2>Front-End Technologies</h2>
+			<div class="html">		
+			<!--HTML-->	  
+			  <svg viewBox="0 0 452 520">
+			    <title>HTML5 Logo Badge</title>
+			    <path fill='RGB(227,79,38)' d='M 41,460 L 0,0 451,0 410,460 225,512'/>
+			    <path fill='RGB(239,101,42)' d='M 226,472 L 375,431 410,37 226,37'/>
+			    <path fill='RGB(236,237,238)' d='M 226,208 L 151,208 146,150 226,150 226,94 84,94 99,265 226,265 z M 226,355 L162,338 158,293 102,293 109,382 226,414 z'/>
+			    <path fill='RGB(255,255,255)' d='M 226,265 L 295,265 288,338 226,355 226,414 341,382 357,208 226,208 z M 226,94 L226,150 362,150 367,94 z'/>
+			  </svg>
+			</div>
+			<span>HTML</span>
+
+			<!--JS-->
+
+			<div class="js">
+			  <svg viewBox="0 0 452 520">
+			    <title>Javascript Logo Badge</title>
+			    <path fill='RGB(229,162,40)' d='M 0,0 L 451,0 410,460 225,512 41,460'/>
+			    <path fill='RGB(241,191,38)' d='M 226,472 L375,431 410,37 226,37'/>
+			    <path fill='RGB(236,237,238)' d='M 226,94 L 113,94 102,265 226,265 226,208 160,208 165,150 226,150 z M 226,355 L 162,338 158,293 102,293 109,382 226,414 z'/>
+			    <path fill='RGB(255,255,255)' d='M 226,265 L 295,265 288,338 226,355 226,414 341,382 357,208 226,208 z M 226,94 L 339,94 357,180 301,180 293,150 226,150 z'/>
+			  </svg>
+			</div>
+			<span>JS</span>
+
+			<!--CSS-->
+
+			<div class="css">
+			  <svg viewBox="0 0 452 520">
+			    <title>CSS3 Logo Badge</title>
+			    <path fill='RGB(12,115,184)' d='M 41,460 L 0,0 451,0 410,460 225,512'/>
+			    <path fill='RGB(48,169,220)' d='M 226,472 L 375,431 410,37 226,37'/>
+			    <path fill='RGB(236,237,238)' d='M 226,208 L 94,208 99,265 226,265 z M 226,94 L 84,94 89,150 226,150 z M 226,355 L 102,322 109,382 226,414 z'/>
+			    <path fill='RGB(255,255,255)' d='M 226,265 L 295,265 288,338 226,355 226,414 341,382 367,94 226,94 226,150 306,150 300,208 226,208 z'/>
+			  </svg>
+			</div>
+			<span>CSS</span>
+		</div>
+
+
+		<div class="contact" id="contact"><h1>Connect at</h1>
+			<form>
+				<input type="text" name="FName" placeholder="Your First Name Here..." required="required">
+				<input type="text" name="LName" placeholder="Your Last Name Here..." required="required">
+				<br>
+				<input type="email" name="email" placeholder="Your Email Here..." required="required">
+				<br>
+				<textarea rows="6" placeholder="Any message here..."></textarea>
+				<br>
+				<button type="submit">Mail it</button>
+			</form>
+		</div>
+	</div>
+	
+		
+	
+
+
+</body>
+</html>
+
