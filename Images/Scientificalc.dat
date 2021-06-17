@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!-- saved from url=(0059)file:///C:/Users/Icon/Desktop/html_files/Scientificalc.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+	<link rel="stylesheet" type="text/css" href="./Scientificalc_files/calc_style.css">
+	<script type="text/javascript" src="./Scientificalc_files/calcjavascript.js.download"></script>
+	
+</head>
+<body>
+
+	<input type="text" id="result"><div style="background-color: #191970;">
+           <a href="file:///C:/Users/Icon/Desktop/html_files/calc.html" style="color: white;text-decoration:  none;">Normal Calculator</a>
+           <a class="active">Scientific Calculator</a>
+      </div><table border="2" style="border-collapse: collapse;">
+      <tbody><tr></tr>
+      <tr>
+      
+      </tr>
+
+
+
+         <tr>
+            <td style="cursor: pointer" class="header_style" onclick="clr()" ontouch="clr()">C</td>
+            <td style="cursor: pointer" class="header_style" onclick="dis(&#39;(&#39;)" ontouch="dis(&#39;(&#39;)">(</td>
+            <td style="cursor: pointer" class="header_style" onclick="dis(&#39;)&#39;)" ontouch="dis(&#39;)&#39;)">)</td>
+            <td style="cursor: pointer" class="header_style" onclick="backspc()" ontouch="backspc()">&#8592;</td>
+            <td style="cursor: pointer" class="Basicoperation" onclick="dis(&#39;**(-1)&#39;)" ontouch="dis(&#39;**(-1)&#39;)">x<sup>-1</sup></td>
+         </tr>
+
+
+         <tr>
+            <td style="cursor: pointer" onclick="dis(&#39;7&#39;)" ontouch="dis(&#39;7&#39;)">7</td>
+            <td style="cursor: pointer" onclick="dis(&#39;8&#39;)" ontouch="dis(&#39;8&#39;)">8</td>
+            <td style="cursor: pointer" onclick="dis(&#39;9&#39;)" ontouch="dis(&#39;9&#39;)">9</td>
+            <td style="cursor: pointer" class="operation" onclick="log10()" ontouch="log10">LOG10</td>
+            <td style="cursor: pointer" class="operation" onclick="CtoF()" ontouch="CtoF()">&#8451;&#8594;&#8457;</td>
+         </tr>
+
+         <tr>
+            <td style="cursor: pointer" onclick="dis(&#39;4&#39;)" ontouch="dis(&#39;4&#39;)">4</td>
+            <td style="cursor: pointer" onclick="dis(&#39;5&#39;)" ontouch="dis(&#39;5&#39;)">5</td>
+            <td style="cursor: pointer" onclick="dis(&#39;6&#39;)" ontouch="dis(&#39;6&#39;)">6</td>
+            <td style="cursor: pointer" class="operation" onclick="sin()" ontouch="sin()">Rad(sin)</td>
+            <td style="cursor: pointer" class="operation" onclick="FtoC()" ontouch="FtoC()">&#8457;&#8594;&#8451;</td>
+         </tr>
+
+          <tr>
+            <td style="cursor: pointer" onclick="dis(&#39;1&#39;)" ontouch="dis(&#39;1&#39;)">1</td>
+            <td style="cursor: pointer" onclick="dis(&#39;2&#39;)" ontouch="dis(&#39;2&#39;)">2</td>
+            <td style="cursor: pointer" onclick="dis(&#39;3&#39;)" ontouch="dis(&#39;3&#39;)">3</td>
+            <td style="cursor: pointer" class="operation" onclick="cos()" ontouch="cos()">Rad(cos)</td>
+            <td style="cursor: pointer" class="operation" onclick="KtoF()" ontouch="KtoF()">&#730;&#8490;&#8594;&#8457;</td>  
+          </tr>
+
+         <tr>
+            <td style="cursor: pointer" onclick="dis(&#39;0&#39;)" ontouch="dis(&#39;0&#39;)">0</td>
+            <td style="cursor: pointer" onclick="dis(&#39;.&#39;)" ontouch="dis(&#39;.&#39;)">.</td>
+            <td style="cursor: pointer" class="operation" value="ANS" onclick="result()" ontouch="result()">ANS</td>
+            <td style="cursor: pointer" class="operation" onclick="tan()" ontouch="tan()">Rad(tan)</td>
+            <td style="cursor: pointer" class="operation" onclick="ln()" ontouch="ln()">LN</td>
+         </tr>
+   
+        
+      </tbody></table>
+   
+   
+
+
+     </body></html>
