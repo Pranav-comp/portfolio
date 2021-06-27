@@ -19,10 +19,8 @@
 			
 		}
 		/*===Header===*/
-		.nav-bar a{
-			position: relative;
-			position: sticky;
-		}
+
+		
 		.nav-bar a{
 			text-decoration: none;
 			font-family: serif;
@@ -30,14 +28,13 @@
 			color: wheat;
 			letter-spacing: 2px;
 			padding: 3px;
-			position: sticky;
-			margin: 1%;
+			margin:  0.6%;
 		}
 
 		.nav-bar a:hover,.nav-edu a:hover{
 			background: #fffafa;
 			padding: 3px;
-			margin:  1%;
+			margin:  0.6%;
 			color: crimson;
 			background: bisque;
 			border-radius: 5px;
@@ -71,7 +68,7 @@
 			grid-template-areas: 
 			'about about about about about about'
 			'skills skills skills skills skills skills'
-			'nav-edu academics academics academics academics academics'
+			/*'nav-edu academics academics academics academics academics'*/
 			'contact contact contact contact contact contact'
 			'social social social social social social';
 			grid-gap: 15px;
@@ -100,8 +97,8 @@
 		h2 {
 			text-align: center;
 			font-family: serif;
-			-webkit-text-stroke: 1px black;
-			-webkit-text-fill-color: crimson;
+			letter-spacing: 0.5vw;
+			color: lightgreen;
 		}
 
 		img {
@@ -120,7 +117,7 @@
 
 		/*===Skills===*/
 		
-		.html,.css,.js ,.c,.c__,.py,.sql,.php{
+		.html,.css,.js ,.c,.c__,.py,.sql,.nodejs{
 			width: 23vw;
 			margin: 1%;
 			display: inline-block;
@@ -177,7 +174,7 @@
 		button {
 			width: 23vw;
 			padding: 15px;
-			font-size: 16px;
+			font-size: 20px;
 			background: seagreen;
 			color: ghostwhite;
 			font-weight: bolder;
@@ -240,7 +237,7 @@
 				'about about about about about about'								
 				'skills skills skills skills skills skills'
 				'nav-edu nav-edu nav-edu nav-edu nav-edu nav-edu'
-				'academics academics academics academics academics academics'		
+				/*'academics academics academics academics academics academics'	*/	
 				'contact contact contact contact contact contact'
 				'social social social social social social';
 			}
@@ -248,7 +245,7 @@
 				width: 88vw;	
 			}
 
-			.html,.js,.css,.c,.c__,.py,.sql,.php{
+			.html,.js,.css,.c,.c__,.py,.sql,.nodejs{
 				width: 87vw;
 				display: block;
 			}
@@ -277,7 +274,7 @@
 		<a href="#header">Home</a>
 		<a href="#about">About</a>
 		<a href="#skills">Skills</a>
-		<a href="#academics">Academics</a>		
+		<!--<a href="#academics">Academics</a>	-->	
 		<a href="#contact">Connect at</a>
 	</div>
 	<br>
@@ -287,7 +284,7 @@
 		<div class="about">
 			<br>
 			<h2>Hey!!!</h2>
-			<h2>I'm FrondEnd WebDev</h2>
+			<h2>I'm Full Stack WebDev</h2>
 		</div>
 		
 		<!--Skills-->
@@ -329,8 +326,8 @@
 				<div style="width:80%;" class="styling">80%</div>
 			</div>
 			<label>PHP</label>
-			<div class="php">
-				<div style="width: 70%;" class="styling">70%</div>
+			<div class="nodejs">
+				<div style="width: 70%;" class="styling">75%</div>
 			</div>
 			
 		</div>
@@ -345,18 +342,18 @@
 				<br>
 				<textarea rows="6" placeholder="Any Message here..."></textarea>
 				<br>
-				<button type="submit">Mail it</button>
+				<button type="submit">Send</button>
 			</form>
 		</div>
 		<!--Social media following-->
 		<div class="social">
-			<i class="fa fa-facebook-official"></i>
-			<i class="fa fa-github-square"></i>
-			<i class="fa fa-instagram"></i>
-			<i class="fa fa-linkedin-square"></i>
-			<i class="fa fa-telegram"></i>
-			<i class="fa fa-whatsapp"></i>
-			<i class="fa fa-youtube"></i>
+			<i class="fa fa-facebook-official" title="Facebook"></i>
+			<i class="fa fa-github-square" title="GitHub"></i>
+			<i class="fa fa-instagram" title="Instagram"></i>
+			<i class="fa fa-linkedin-square" title="LinkedIn"></i>
+			<i class="fa fa-telegram" title="Telegram"></i>
+			<i class="fa fa-whatsapp" title="Whatsapp"></i>
+			<i class="fa fa-youtube" title="Youtube"></i>
 
 		</div>
 	</div>
