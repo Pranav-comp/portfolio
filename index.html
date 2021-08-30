@@ -20,21 +20,28 @@
 		}
 		/*===Header===*/
 
+		.nav-bar{
+			position: fixed;
+			display: inline-flex;
+			background: repeating-linear-gradient(45deg,red,blue,seagreen);
+			width: 100%;
+			border-radius: 6px;
+			padding: 5px;
+			font-size: 4vw;
+		}
 		
 		.nav-bar a{
 			text-decoration: none;
 			font-family: serif;
 			font-weight: bolder;
 			color: wheat;
-			letter-spacing: 2px;
-			padding: 3px;
-			margin:  0.6%;
+			margin-right: 3vw;
+			float: right;
 		}
 
 		.nav-bar a:hover,.nav-edu a:hover{
 			background: #fffafa;
-			padding: 3px;
-			margin:  0.6%;
+			
 			color: crimson;
 			background: bisque;
 			border-radius: 5px;
@@ -188,24 +195,24 @@
 		}
 
 		/*===Social Media===*/
-		.social>i{
+		.social i{
 			font-size: 35px;
 			color: azure;
-			margin: 1%;
+			margin: 3%;
 		}
 
-		.fa-facebook-official:hover{
+		.fa-facebook:hover{
 			color: blue;
 		}
 
-		.fa-github-square:hover{
+		.fa-github:hover{
 			color: gainsboro;
 		}
 		.fa-instagram:hover{
 			color: magenta;
 		}
 
-		.fa-linkedin-square:hover{
+		.fa-linkedin:hover{
 			color: royalblue;
 		}
 
@@ -213,19 +220,14 @@
 			color: dodgerblue;
 		}
 
-		.fa-whatsapp:hover{
-			color: lightgreen;
-		}
-
-		.fa-youtube:hover{
-			color: darkred;
-		}
+		
 		/*===Responsive===*/
 		@media screen and (max-width: 800px){
 			
 			body {
 				font-size: 17px;
 			}
+
 			.nav-bar a{
 				display: block;
 				text-align: center;
@@ -347,13 +349,10 @@
 		</div>
 		<!--Social media following-->
 		<div class="social">
-			<i class="fa fa-facebook-official" title="Facebook"></i>
-			<i class="fa fa-github-square" title="GitHub"></i>
-			<i class="fa fa-instagram" title="Instagram"></i>
-			<i class="fa fa-linkedin-square" title="LinkedIn"></i>
-			<i class="fa fa-telegram" title="Telegram"></i>
-			<i class="fa fa-whatsapp" title="Whatsapp"></i>
-			<i class="fa fa-youtube" title="Youtube"></i>
+			<a href="https://www.facebook.com/pranav.chaudhari.505523"><i class="fa fa-facebook"></i></a>
+        	<a href="https://www.linkedin.com/in/pranav-chaudhari-4523551b1 "><i class="fa fa-linkedin"></i></a>
+        	<a href="https://github.com/Pranav-comp "><i class="fa fa-github"></i></a>
+        	<a href="https://t.me/Pranav_Chaudhari"><i class="fa fa-telegram"></i></a>
 
 		</div>
 	</div>
